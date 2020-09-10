@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0F7173"
     android:orientation="vertical"
     tools:context=".DetailActivity">
 
@@ -11,7 +12,8 @@
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:layout_marginStart="10dp"
+        android:textSize="50sp"
         tools:text="Rogue" />
 
     <RatingBar
@@ -19,11 +21,18 @@
         style="@style/Widget.AppCompat.RatingBar.Indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:numStars="10" />
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:numStars="10"
+        android:progressTint="#7BAFB1"
+        android:rating="6" />
 
     <TextView
         android:id="@+id/tvOverview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="20sp"
         tools:text="Just stream it on Netflix or something" />
 </LinearLayout>
