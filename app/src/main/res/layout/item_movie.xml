@@ -7,6 +7,14 @@
     android:layout_height="wrap_content">
 
     <ImageView
+        android:id="@+id/ivInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/transition_widget"
+        android:scaleType="centerCrop"
+        android:transitionName="more_info" />
+
+    <ImageView
         android:id="@+id/ivPoster"
         android:layout_width="120dp"
         android:layout_height="wrap_content"

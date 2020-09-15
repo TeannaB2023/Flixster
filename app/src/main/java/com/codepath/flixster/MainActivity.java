@@ -32,8 +32,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // the line below hides the Activity Bar
-        //getSupportActionBar().hide();
 
         RecyclerView rvMovies = findViewById(R.id.rvMovies);
         movies = new ArrayList<>();
@@ -57,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.i(TAG, "Results: " + results.toString());
                     movies.addAll(Movie.fromJsonArray(results));
                     movieAdapter.notifyDataSetChanged();
-                    Log.i(TAG, "Movies" + movies.size());
+                    Log.i(TAG, "Movies " + movies.size());
                 } catch (JSONException e) {
                     Log.e(TAG, "Hit JSON exception", e);
                     e.printStackTrace();

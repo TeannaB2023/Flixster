@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Flixster</string>
+    <string name="transition_widget">transition widget</string>
+    <string name="play_button">play button</string>
 </resources>
